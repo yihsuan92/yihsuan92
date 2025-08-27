@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* 基础样式与变量 - 更新为新的配色方案 */
-       :root {
+        :root {
             --primary-color: #B394BF;       /* 主色调 - 风筝蓝 */
-            --secondary-color: #ffc933;     /* 流苏橙 */
+            --secondary-color: #C7D170;     /* 流苏橙 */
             --accent-color: #fafaff;        /* 云白作为辅助色 */
             --card-color-1: #fafaff;        /* 卡片配色1 */
-            --card-color-2: #F1E3F0;        /* 卡片配色2 */
+            --card-color-2: #ede3f1;        /* 卡片配色2 */
             --dark-color: #5F526E;          /* 深色变体 - 稍深的蓝色 */
             --light-color: #f8f8fa;
             --text-color: #333;
             --transition: all 0.3s ease;
             --border-radius: 20px;          /* 增加圆角大小 */
         }
-
 
         * {
             margin: 0;
@@ -547,7 +546,7 @@
             top: 20px;
             right: 30px;
             color: white;
-            font-size: 40px;
+            font-size: 44px;
             font-weight: bold;
             cursor: pointer;
             transition: var(--transition);
@@ -564,7 +563,7 @@
             background: transparent;
             color: white;
             border: none;
-            font-size: 50px;
+            font-size: 56px;
             font-weight: 700;
             padding: 8px 12px;
             border-radius: 6px;
@@ -944,7 +943,7 @@
         <div class="container">
             <h2 class="section-title">我的作品</h2>
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn active" data-filter="all">全部分類</button>
                 <button class="filter-btn" data-filter="hand-drawn">手繪</button>
                 <button class="filter-btn" data-filter="digital">電繪</button>
                 <button class="filter-btn" data-filter="graphic">平面</button>
@@ -953,13 +952,13 @@
                 <button class="filter-btn" data-filter="other">其他</button>
             </div>
             <div class="portfolio-grid">
-                <!-- 这六个格子在"全部"时会显示为各类别的跳转按钮 -->
+                <!-- 這六個格子在"全部"時會顯示為各類別的跳轉按鈕 -->
                 <div class="portfolio-item" data-category="hand-drawn" data-is-category-button="true">
-                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="手绘作品">
+                    <img src="Media/1-7.jpg" alt="手绘作品">
                     
                     <div class="portfolio-info">
-                        <h3>自然之美</h3>
-                        <p>手绘 / 2023</p>
+                        <h3>色鉛筆-金魚</h3>
+                        <p>手繪 / 2023</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="digital" data-is-category-button="true">
@@ -1003,22 +1002,68 @@
                     </div>
                 </div>
                 
-                <!-- 其余作品（示例） -->
+                <!-- 原本示例作品，並追加至每個類別至 9 件 -->
+
+                <!-- 手繪 (共 9) -->
                 <div class="portfolio-item" data-category="hand-drawn">
-                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="手绘作品2">
+                    <img src="Media/1-8.jpg" alt="手绘作品2">
                     <div class="portfolio-info">
                         <h3>花卉系列</h3>
-                        <p>手绘 / 2023</p>
+                        <p>手繪 / 2023</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="hand-drawn">
-                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="手绘作品3">
+                    <img src="Media/1-3.jpg" alt="手绘作品3">
                     <div class="portfolio-info">
                         <h3>人物肖像</h3>
-                        <p>手绘 / 2023</p>
+                        <p>手繪 / 2023</p>
                     </div>
                 </div>
-                
+                <!-- 新增手繪 6 件 -->
+                <div class="portfolio-item" data-category="hand-drawn">
+                    <img src="Media/1-9.png" alt="手绘作品4">
+                    <div class="portfolio-info">
+                        <h3>靜物練習</h3>
+                        <p>手繪 / 2022</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="hand-drawn">
+                    <img src="Media/1-5.jpg" alt="手绘作品5">
+                    <div class="portfolio-info">
+                        <h3>速寫集</h3>
+                        <p>手繪 / 2021</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="hand-drawn">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="手绘作品6">
+                    <div class="portfolio-info">
+                        <h3>插畫系列A</h3>
+                        <p>手繪 / 2020</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="hand-drawn">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="手绘作品7">
+                    <div class="portfolio-info">
+                        <h3>色彩研究</h3>
+                        <p>手繪 / 2024</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="hand-drawn">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="手绘作品8">
+                    <div class="portfolio-info">
+                        <h3>經典素描</h3>
+                        <p>手繪 / 2019</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="hand-drawn">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="手绘作品9">
+                    <div class="portfolio-info">
+                        <h3>動物習作</h3>
+                        <p>手繪 / 2023</p>
+                    </div>
+                </div>
+
+                <!-- 電繪 (共 9) -->
                 <div class="portfolio-item" data-category="digital">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="电绘作品2">
                     <div class="portfolio-info">
@@ -1033,11 +1078,55 @@
                         <p>电绘 / 2023</p>
                     </div>
                 </div>
-                
+                <!-- 新增電繪 6 件 -->
+                <div class="portfolio-item" data-category="digital">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="电绘作品4">
+                    <div class="portfolio-info">
+                        <h3>概念角色</h3>
+                        <p>电绘 / 2022</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="digital">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="电绘作品5">
+                    <div class="portfolio-info">
+                        <h3>場景練習</h3>
+                        <p>电绘 / 2021</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="digital">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="电绘作品6">
+                    <div class="portfolio-info">
+                        <h3>角色設計B</h3>
+                        <p>电绘 / 2020</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="digital">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="电绘作品7">
+                    <div class="portfolio-info">
+                        <h3>光影實驗</h3>
+                        <p>电绘 / 2024</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="digital">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="电绘作品8">
+                    <div class="portfolio-info">
+                        <h3>插畫系列C</h3>
+                        <p>电绘 / 2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="digital">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="电绘作品9">
+                    <div class="portfolio-info">
+                        <h3>數位速寫</h3>
+                        <p>电绘 / 2022</p>
+                    </div>
+                </div>
+
+                <!-- 平面 (共 9) -->
                 <div class="portfolio-item" data-category="graphic">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="平面设计2">
                     <div class="portfolio-info">
-                        <h3>海报设计</h3>
+                        <h3>海報設計</h3>
                         <p>平面设计 / 2023</p>
                     </div>
                 </div>
@@ -1048,51 +1137,227 @@
                         <p>平面设计 / 2023</p>
                     </div>
                 </div>
-                
+                <!-- 新增平面 6 件 -->
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="平面设计4">
+                    <div class="portfolio-info">
+                        <h3>標誌合集</h3>
+                        <p>平面设计 / 2022</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="平面设计5">
+                    <div class="portfolio-info">
+                        <h3>名片設計</h3>
+                        <p>平面设计 / 2021</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="平面设计6">
+                    <div class="portfolio-info">
+                        <h3>活動視覺</h3>
+                        <p>平面设计 / 2020</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="平面设计7">
+                    <div class="portfolio-info">
+                        <h3>包裝概念B</h3>
+                        <p>平面设计 / 2024</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="平面设计8">
+                    <div class="portfolio-info">
+                        <h3>海報系列D</h3>
+                        <p>平面设计 / 2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="平面设计9">
+                    <div class="portfolio-info">
+                        <h3>宣傳單張</h3>
+                        <p>平面设计 / 2022</p>
+                    </div>
+                </div>
+
+                <!-- 攝影 (共 9) -->
                 <div class="portfolio-item" data-category="photography">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品2">
                     <div class="portfolio-info">
-                        <h3>自然风光</h3>
+                        <h3>自然風光</h3>
                         <p>摄影 / 2023</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="photography">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品3">
                     <div class="portfolio-info">
-                        <h3>街头摄影</h3>
+                        <h3>街頭攝影</h3>
                         <p>摄影 / 2023</p>
                     </div>
                 </div>
-                
+                <!-- 新增攝影 6 件 -->
+                <div class="portfolio-item" data-category="photography">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品4">
+                    <div class="portfolio-info">
+                        <h3>夜景系列</h3>
+                        <p>摄影 / 2022</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photography">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品5">
+                    <div class="portfolio-info">
+                        <h3>人像習作</h3>
+                        <p>摄影 / 2021</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photography">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品6">
+                    <div class="portfolio-info">
+                        <h3>微距觀察</h3>
+                        <p>摄影 / 2020</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photography">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品7">
+                    <div class="portfolio-info">
+                        <h3>風格系列A</h3>
+                        <p>摄影 / 2024</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photography">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品8">
+                    <div class="portfolio-info">
+                        <h3>旅拍選萃</h3>
+                        <p>摄影 / 2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photography">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="摄影作品9">
+                    <div class="portfolio-info">
+                        <h3>建築美學</h3>
+                        <p>摄影 / 2022</p>
+                    </div>
+                </div>
+
+                <!-- 3D (共 9) -->
                 <div class="portfolio-item" data-category="3d">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品2">
                     <div class="portfolio-info">
-                        <h3>产品模型</h3>
+                        <h3>產品模型</h3>
                         <p>3D建模 / 2023</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="3d">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品3">
                     <div class="portfolio-info">
-                        <h3>建筑可视化</h3>
+                        <h3>建築可視化</h3>
                         <p>3D建模 / 2023</p>
                     </div>
                 </div>
-                
+                <!-- 新增 3D 6 件 -->
+                <div class="portfolio-item" data-category="3d">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品4">
+                    <div class="portfolio-info">
+                        <h3>角色雕塑</h3>
+                        <p>3D建模 / 2022</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="3d">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品5">
+                    <div class="portfolio-info">
+                        <h3>材質練習</h3>
+                        <p>3D渲染 / 2021</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="3d">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品6">
+                    <div class="portfolio-info">
+                        <h3>場景搭建</h3>
+                        <p>3D建模 / 2020</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="3d">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品7">
+                    <div class="portfolio-info">
+                        <h3>動畫測試</h3>
+                        <p>3D / 2024</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="3d">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品8">
+                    <div class="portfolio-info">
+                        <h3>工業設計</h3>
+                        <p>3D建模 / 2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="3d">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="3D作品9">
+                    <div class="portfolio-info">
+                        <h3>渲染系列</h3>
+                        <p>3D渲染 / 2022</p>
+                    </div>
+                </div>
+
+                <!-- 其他 (共 9) -->
                 <div class="portfolio-item" data-category="other">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品2">
                     <div class="portfolio-info">
-                        <h3>装置艺术</h3>
+                        <h3>裝置藝術</h3>
                         <p>混合媒体 / 2023</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="other">
                     <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品3">
                     <div class="portfolio-info">
-                        <h3>实验影像</h3>
+                        <h3>實驗影像</h3>
                         <p>混合媒体 / 2023</p>
                     </div>
                 </div>
+                <!-- 新增其他 6 件 -->
+                <div class="portfolio-item" data-category="other">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品4">
+                    <div class="portfolio-info">
+                        <h3>混合實驗A</h3>
+                        <p>混合媒体 / 2022</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="other">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品5">
+                    <div class="portfolio-info">
+                        <h3>裝置研究</h3>
+                        <p>混合媒体 / 2021</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="other">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品6">
+                    <div class="portfolio-info">
+                        <h3>互動式作品</h3>
+                        <p>混合媒体 / 2020</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="other">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品7">
+                    <div class="portfolio-info">
+                        <h3>聲音裝置</h3>
+                        <p>混合媒体 / 2024</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="other">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品8">
+                    <div class="portfolio-info">
+                        <h3>跨域計畫</h3>
+                        <p>混合媒体 / 2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="other">
+                    <img src="https://u.fmyeah.com/i111/68acad3d9ae18.jpg" alt="其他作品9">
+                    <div class="portfolio-info">
+                        <h3>視覺筆記</h3>
+                        <p>混合媒体 / 2022</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -1107,9 +1372,9 @@
                 </div>
                 <div class="about-text">
                     <h2>羅翊瑄</h2>
-                    <p>我是一位充满热情的多媒体设计师，拥有5年的创作经验。我擅长将传统艺术技巧与数字技术相结合，创造出独特而富有表现力的作品。</p>
-                    <p>我的作品注重细节、色彩和构图，旨在通过视觉语言讲述故事和传达情感。我相信好的设计能够连接人心，传递价值。</p>
-                    <p>除了设计工作，我还喜欢旅行、摄影和探索新的艺术形式，这些兴趣也为我的创作提供了源源不断的灵感。</p>
+                    <p>我是一位充满热情的多媒体设计师，拥有5年的创作经验。我擅長將傳統藝術技巧與數位技術相結合，創造出獨特而富有表現力的作品。</p>
+                    <p>我的作品注重細節、色彩和構圖，旨在通過視覺語言講述故事和傳達情感。我相信好的設計能夠連接人心，傳遞價值。</p>
+                    <p>除了設計工作，我還喜歡旅行、攝影和探索新的藝術形式，這些興趣也為我的創作提供了源源不斷的靈感。</p>
                     <a href="#contact" class="btn">聯絡我</a>
                 </div>
             </div>
@@ -1122,70 +1387,70 @@
             <h2 class="section-title">我的技能</h2>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> 手绘与插画</h3>
+                    <h3></i> 專業證照</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fas fa-print"></i> 印前製程 PC - 乙級
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i> 視覺傳達-丙級
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-gamepad"></i> ITE - 數位內容遊戲美術專業人員
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i> ITE - 數位內容遊戲企劃專業人員
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3></i> 傳統繪畫媒材</h3>
                     <div class="skill-list">
                         <div class="skill-item">
                             <i class="fas fa-pencil-alt"></i> 素描
                         </div>
                         <div class="skill-item">
+                            <i class="fas fa-highlighter"></i> 酒精麥克筆
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-pencil-alt"></i> 色鉛筆
+                        </div>
+                        <div class="skill-item">
                             <i class="fas fa-paint-brush"></i> 水彩
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-palette"></i> 油画
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-marker"></i> 马克笔绘画
                         </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-laptop"></i> 数字艺术</h3>
+                    <h3></i> 視覺設計軟體</h3>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <i class="fas fa-paint-brush"></i> Photoshop
+                            <i class="fas fa-magic"></i> Adobe Photoshop
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-vector-square"></i> Illustrator
+                            <i class="fas fa-vector-square"></i> Adobe Illustrator
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-book-open"></i> Adobe InDesign
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-tablet-alt"></i> Procreate
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-pen-fancy"></i> 数字插画
-                        </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-camera"></i> 摄影与3D</h3>
+                    <h3></i> 後製與3D軟體</h3>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <i class="fas fa-user"></i> 人像摄影
+                            <i class="fas fa-video"></i> Adobe Premiere Pro
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-mountain"></i> 风景摄影
+                            <i class="fas fa-film"></i> Adobe After Effects
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-cube"></i> Blender
+                            <i class="fas fa-cube"></i> Autodesk Maya 
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-cubes"></i> 3D建模
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-film"></i> 剪辑与后期</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <i class="fas fa-video"></i> Premiere Pro
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-magic"></i> After Effects
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-photo-video"></i> 视频剪辑
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-sliders-h"></i> 色彩校正
+                            <i class="fas fa-cubes"></i> Unity
                         </div>
                     </div>
                 </div>
@@ -1200,30 +1465,30 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">2021 - 至今</div>
-                        <h3>自由设计师</h3>
-                        <p>为多家公司和个人客户提供设计服务，包括品牌标识、插画和数字内容创作。</p>
+                        <div class="timeline-date">2022 - 至今</div>
+                        <h3>大學-多媒體設計系</h3>
+                        <p>致理科技大學多媒體設計系在學中。</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">2019 - 2021</div>
-                        <h3>XX设计工作室 · 高级设计师</h3>
-                        <p>负责主导多个品牌设计项目，团队管理和客户沟通。</p>
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3>時報金犢獎國際競賽</h3>
+                        <p>參加永慶房屋平面海報、森田藥粧短影音及永和豆漿動畫比賽，共四項作品入圍決賽。</p>
+                    </div>
+                </div>               
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <h3>工作經驗</h3>
+                        <p>於寒暑假期間在電子代工廠擔任倉庫助理及測試員，累計一年工作年資。</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">2017 - 2019</div>
-                        <h3>YY创意公司 · 平面设计师</h3>
-                        <p>参与广告活动设计，制作印刷材料和数字媒体内容。</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2013 - 2017</div>
-                        <h3>ZZ艺术学院 · 美术学士</h3>
-                        <p>主修视觉传达设计，辅修摄影。获得校级优秀毕业生荣誉。</p>
+                        <div class="timeline-date">2019 - 2022</div>
+                        <h3>高職-廣告技術科</h3>
+                        <p>畢業於國立基隆商工廣告技術科。</p>
                     </div>
                 </div>
             </div>
@@ -1247,14 +1512,14 @@
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h3>电子邮件</h3>
-                        <p>11132123@gm.chihlee.edu.tw</p>
+                        <h3>電子郵件</h3>
+                        <p>yihsuan.luo@gmail.com</p>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <h3>电话</h3>
+                        <h3>電話</h3>
                         <p>0905 288 814</p>
                     </div>
                 </div>
@@ -1278,36 +1543,54 @@
     </footer>
 
     <script>
-        // 导航菜单切换
+        /* -----------------------------
+           JavaScript - 統一整理區域
+           - 保留原有功能
+           - 改善：模態導航（上一張/下一張）只在「目前篩選/分類內」切換
+           ------------------------------*/
+
+        // --- DOM references ---
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-        
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = Array.from(document.querySelectorAll('.portfolio-item'));
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeModal = document.querySelector('.close-modal');
+        const modalPrev = document.querySelector('.modal-prev');
+        const modalNext = document.querySelector('.modal-next');
+
+        // --- State variables ---
+        let currentFilter = 'all';
+        // visibleImgElems 保持目前可見（或篩選後）的 img 元素陣列，用於模態內的前後切換
+        let visibleImgElems = [];
+        let currentIndex = -1; // index within visibleImgElems
+
+        // --------------------
+        // 導覽列行為（保留原本）
+        // --------------------
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            hamburger.innerHTML = navLinks.classList.contains('active') ? 
+            hamburger.innerHTML = navLinks.classList.contains('active') ?
                 '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
-        
-        // 点击导航链接关闭菜单
+
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 hamburger.innerHTML = '<i class="fas fa-bars"></i>';
             });
         });
-        
-        // 作品筛选功能
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-        
-        let currentFilter = 'all';
-        
+
+        // --------------------
+        // 作品篩選功能（保留原本，但加入更新 visibleImgElems 的步驟）
+        // --------------------
         function applyFilter(filterValue) {
             currentFilter = filterValue;
             portfolioItems.forEach(item => {
                 const itemCat = item.getAttribute('data-category');
                 const isCategoryButton = item.hasAttribute('data-is-category-button');
-                
+
                 if (filterValue === 'all') {
                     if (isCategoryButton) {
                         item.style.display = 'flex';
@@ -1320,65 +1603,109 @@
                     item.style.display = 'none';
                 }
             });
+
+            // 更新目前可見的圖片列表（模態導航使用）
+            updateVisibleImgElems();
         }
 
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-                
+
                 const filterValue = button.getAttribute('data-filter');
                 applyFilter(filterValue);
             });
         });
 
-        // 作品模态框功能 - 修改后的代码
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const closeModal = document.querySelector('.close-modal');
-        const modalPrev = document.querySelector('.modal-prev');
-        const modalNext = document.querySelector('.modal-next');
+        // --------------------
+        // 可見圖片管理（核心改動）
+        // --------------------
+        function updateVisibleImgElems() {
+            // 只取目前在 DOM 中呈現（display !== 'none'）的作品 item，並回傳其中的 img 元素
+            visibleImgElems = portfolioItems
+                .filter(item => item.offsetParent !== null) // offsetParent null 表示 display:none 或不可見
+                .map(item => item.querySelector('img'))
+                .filter(Boolean);
 
-        let allImages = Array.from(document.querySelectorAll('.portfolio-item img'));
-        let currentIndex = -1;
+            // 如果模態正在開啟，並且 currentIndex 超過新陣列範圍，調整索引
+            if (modal.style.display === 'flex') {
+                if (visibleImgElems.length === 0) {
+                    // 沒有可見圖片則關閉模態
+                    closeLightbox();
+                } else {
+                    if (currentIndex >= visibleImgElems.length) {
+                        currentIndex = visibleImgElems.length - 1;
+                    }
+                    // 更新 modal 顯示來源（避免同步問題）
+                    modalImg.src = visibleImgElems[currentIndex].src;
+                }
+            }
+        }
 
-        // 修改：将事件绑定到整个作品项而不是仅图片
-        portfolioItems.forEach((item, idx) => {
+        // --------------------
+        // 模態框行為（保留原本操作邏輯，但以 visibleImgElems 為來源）
+        // --------------------
+        function openLightboxWithImg(img) {
+            updateVisibleImgElems();
+            // 設定 currentIndex 為在 visibleImgElems 的位置
+            currentIndex = visibleImgElems.indexOf(img);
+            if (currentIndex === -1) {
+                // 若點到的圖片在目前 visible 列表中找不到（例如點的是 category button），則嘗試找到該 img 在所有圖片中的位置
+                const allImgs = Array.from(document.querySelectorAll('.portfolio-item img'));
+                currentIndex = allImgs.indexOf(img);
+            }
+
+            if (currentIndex !== -1 && visibleImgElems.length > 0) {
+                modal.style.display = 'flex';
+                modalImg.src = visibleImgElems[currentIndex].src;
+                document.body.style.overflow = 'hidden';
+                modalPrev.style.display = 'block';
+                modalNext.style.display = 'block';
+            }
+        }
+
+        function showAtIndex(index) {
+            if (!visibleImgElems || visibleImgElems.length === 0) return;
+            if (index < 0) index = visibleImgElems.length - 1;
+            if (index >= visibleImgElems.length) index = 0;
+            currentIndex = index;
+            modalImg.src = visibleImgElems[currentIndex].src;
+        }
+
+        function closeLightbox() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            modalPrev.style.display = 'none';
+            modalNext.style.display = 'none';
+            currentIndex = -1;
+        }
+
+        // 監聽作品點擊（改為整個作品項目仍可點擊）
+        portfolioItems.forEach((item) => {
             item.addEventListener('click', (e) => {
-                // 防止事件冒泡
                 e.stopPropagation();
-                
+
                 const itemCat = item.getAttribute('data-category');
                 const isCategoryButton = item.hasAttribute('data-is-category-button');
-                
+
                 if (currentFilter === 'all' && isCategoryButton) {
+                    // category 按鈕行為（保持原有）
                     const targetBtn = Array.from(filterButtons).find(b => b.getAttribute('data-filter') === itemCat);
                     if (targetBtn) {
                         targetBtn.click();
                         document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
                     }
                 } else {
-                    // 获取当前项目的图片
                     const img = item.querySelector('img');
                     if (img) {
-                        modal.style.display = 'flex';
-                        modalImg.src = img.src;
-                        document.body.style.overflow = 'hidden';
-                        currentIndex = allImages.indexOf(img);
-                        modalPrev.style.display = 'block';
-                        modalNext.style.display = 'block';
+                        openLightboxWithImg(img);
                     }
                 }
             });
         });
 
-        function showAtIndex(index) {
-            if (index < 0) index = allImages.length - 1;
-            if (index >= allImages.length) index = 0;
-            currentIndex = index;
-            modalImg.src = allImages[currentIndex].src;
-        }
-
+        // 模態 prev/next 綁定（使用 visibleImgElems）
         modalPrev.addEventListener('click', (e) => {
             e.stopPropagation();
             showAtIndex(currentIndex - 1);
@@ -1388,27 +1715,17 @@
             showAtIndex(currentIndex + 1);
         });
 
-        closeModal.addEventListener('click', () => {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            modalPrev.style.display = 'none';
-            modalNext.style.display = 'none';
-        });
-        
+        // 關閉模態
+        closeModal.addEventListener('click', closeLightbox);
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-                modalPrev.style.display = 'none';
-                modalNext.style.display = 'none';
-            }
+            if (e.target === modal) closeLightbox();
         });
 
-        // 键盘支持
+        // 鍵盤支援
         document.addEventListener('keydown', (e) => {
             if (modal.style.display === 'flex') {
                 if (e.key === 'Escape') {
-                    closeModal.click();
+                    closeLightbox();
                 } else if (e.key === 'ArrowLeft') {
                     showAtIndex(currentIndex - 1);
                 } else if (e.key === 'ArrowRight') {
@@ -1417,31 +1734,31 @@
             }
         });
 
-        // 平滑滚动
+        // 平滑滾動（保留）
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     navLinks.classList.remove('active');
                     hamburger.innerHTML = '<i class="fas fa-bars"></i>';
                 }
             });
         });
 
-        // 初始应用：显示全部
+        // 初始應用：顯示全部，並建立可見圖片陣列
         applyFilter('all');
 
-        // 向下箭头行为
+        // 向下箭頭行為（保留，整合）
         (function setupScrollDown() {
           const btn = document.querySelector('.scroll-down');
           const target = document.getElementById('portfolio');
